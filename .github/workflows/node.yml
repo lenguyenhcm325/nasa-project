@@ -1,5 +1,6 @@
 name: NASA Project CI
 on:
+  workflow_dispatch: {}
   push:
     branches: [master]
   pull_request:
@@ -15,7 +16,7 @@ jobs:
           node-version: '16'
       - run: npm install
       - run: npm run build --prefix client
-      
+
 
   
 
